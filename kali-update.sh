@@ -18,7 +18,7 @@ echo -e "$dt $USER Kali Update" >> $logfile
 echo "Updating Kali Linux.  Please Wait"
 echo "" >> $logfile
 
-#fix any broken install(s) before updating
+#fix any broken install(s) before updating | save output to logfile and print in terminal
 apt --fix-broken install -y | tee -a $logfile
 
 #save the results of what needs to be upraged in a temporary text file
